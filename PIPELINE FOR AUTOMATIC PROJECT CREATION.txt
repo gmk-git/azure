@@ -1,0 +1,11 @@
+pipelines.yml
+
+  - script: |
+
+      az login --allow-no-subscriptions -u xx -p xx
+
+      az devops configure --defaults organization=https://dev.azure.com/xx project=xx
+
+      az devops user list
+
+    displayName: 'Login Azure DevOps Extension'
